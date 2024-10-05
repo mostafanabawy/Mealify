@@ -1,0 +1,141 @@
+.xsm-100 {
+    flex: 1 1 100%;
+}
+
+.xsm-50 {
+    flex: 1 1 calc(50% - (var(--gap)*2));
+
+}
+
+.xsm-33 {
+    flex: 1 1 calc(33.33333% - (var(--gap)*2))
+}
+
+.flex-xsm {
+    flex-wrap: wrap-reverse;
+}
+
+
+/* Default styles (for mobile phones) */
+/* Add your base styles here */
+
+/* Small Devices (Tablets) */
+@media (min-width: 600px) {
+    .sm-100 {
+        flex: 1 1 100%;
+    }
+
+    .sm-50 {
+        flex: 1 1 calc(50% - (var(--gap)*2));
+    }
+
+    .sm-33 {
+        flex: 1 1 calc(33.33333% - (var(--gap)*2));
+    }
+
+    .flex-sm {
+        flex-wrap: wrap-reverse;
+    }
+    
+   
+}
+
+/* Medium Devices (Larger Tablets and Small Laptops) */
+@media (min-width: 768px) {
+    .md-100 {
+        flex: 1 1 100%;
+    }
+
+    .md-50 {
+        flex: 1 1 calc(50% - (var(--gap)*2));
+
+    }
+    .md-50-0{
+        flex: 0 1 calc(50% - (var(--gap)*2));
+    }
+
+    
+
+    .md-33 {
+        flex: 1 1 calc(33.33333% - (var(--gap)*2));
+    }
+
+    .flex-md {
+        flex-wrap: wrap;
+    }
+    .nav-container{
+        align-items: center;
+    }
+    .nav-links ul{
+        flex-direction: row !important;
+        height: auto !important;
+    }
+    .nav-links ul #btn{
+        display: none;
+    }
+    .nav-links{
+        order: 0;
+    }
+    .nav-links li{
+        display: flex;
+    }
+
+    .gallery-img {
+        width: calc(calc(100% - var(--gap)* 2) / 2);
+    }
+    .gallery-container {
+        height: 2200px;
+    }
+    .footer-container > div{
+        order: 0;
+    }
+    
+
+}
+
+/* Large Devices (Desktops and Laptops) */
+@media (min-width: 992px) {
+    .lg-100 {
+        flex: 1 1 100%;
+    }
+
+    .lg-50 {
+        flex: 1 1 calc(50% - (var(--gap)*2));
+    }
+
+    .lg-33 {
+        flex: 1 1 calc(33.33333% - (var(--gap)*2));
+    }
+
+    
+  
+
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+    .xlg-100 {
+        flex: 1 1 100%;
+    }
+
+    .xlg-50 {
+        flex: 1 1 calc(50% - var(--gap));
+    }
+
+    .xlg-33 {
+        flex: 1 1 calc(33.33333% - var(--gap));
+    }
+
+    header {
+        min-height: 100vh;
+    }
+    .gallery-img {
+        width: calc(calc(100% - var(--gap)* 2) / 3);
+    }
+
+    .gallery-container {
+        height: 1300px;
+    }
+
+  
+}
